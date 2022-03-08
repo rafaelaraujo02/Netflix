@@ -1,0 +1,19 @@
+/*Para colocar os botões na parte de baixo quando a tela diminuir*/
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+
+    }
+}
+/*Para a descrição do filme não ficar muito espalhado quando aumentar a tela*/
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+
+}

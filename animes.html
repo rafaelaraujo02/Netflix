@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/style/main.css">
+    
+    <!-- owl css -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!-- Responsive CSS-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">Netflix</h2>
+            <nav>
+                <a href="https://www.netflix.com/br/" target="_blank">Site Oficial</a>
+                <a href="index.html">Séries</a>
+                <a href="animes.html">Animes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="filme-principal" id="image-anime">
+            <div class="container">
+                <h3 class="titulo" id="titulo">Attack on Titan</h3>
+                <p class="descricao" id="descricao">Titãs estão quase exterminando a raça humana. Porém alguns estão dispostos a formar um exército de ataque aos seres assassinos. O jovem Eren, após ver sua mãe ser devorada por um titã, decide que não deixará nenhum deles vivo e buscará sua vingança completa. </p>
+                
+                <div class="botoes">
+                    <button onclick="btnAssistir()" role="button" class="botao"> <i class="fas fa-play"></i>
+                    <!-- Usamos o role para que seja renderizado da melhor forma -->
+                        Assistir Agora
+                    </button>
+    
+                    <button onclick="btnInformacoes()" role="button" class="botao" id="informacoes"> <i class="fas fa-info-circle"></i>
+                        Informações
+                    </button>
+               </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Carrosel -->
+    <div class="carrosel-filmes">
+        <div class=" owl-carousel owl-theme">
+            
+            <button onclick="btnDemonslayer()" class="item" type="button" id="demonslayer" value="true">
+                <img class="box-filme" src="/img/demonslayer.jpg" alt="Banner Demon Slayer" srcset="">
+            </button>
+
+            <button onclick="btnHxh()" class="item" type="button" id="hxh">
+                <img class="box-filme" src="/img/hxh.jpg" alt="Banner Hunter x Hunter" srcset="">
+            </button>
+            
+            <button onclick="btnNaruto()" class="item" type="button" id="naruto">
+                <img class="box-filme" src="/img/naruto.jpg" alt="Banner Naruto" srcset="">
+            </button>
+            
+            <button onclick="btnAot()" class="item" type="button" id="aot">
+                <img class="box-filme" src="/img/aot.jpg" alt="Banner Attack on Titan" srcset="">
+            </button>
+
+            <button onclick="btnJujutsu()" class="item" type="button" id="jujutsu">
+                <img class="box-filme" src="/img/jujutsu.jpg" alt="Banner Jujutsu Kaisen" srcset="">
+            </button>
+           
+            <button onclick="btnAbyss()" class="item" type="button" id="abyss">
+                <img class="box-filme" src="/img/abyss.jpg" alt="Banner Made in Abyss" srcset="">
+            </button>
+            
+            <button onclick="btnFma()" class="item" type="button" id="fma" value="true">
+                <img class="box-filme" src="/img/fma.jpg" alt="Banner Full Metal Alchemist" srcset="">
+            </button>
+            
+            <button onclick="btnDbz()" class="item" type="button" id="dbz">
+                <img class="box-filme" src="/img/dbz.jpg" alt="Banner Dragon Ball Z" srcset="">
+            </button>
+            
+
+        </div>
+    </div>
+
+    <!-- Links JS-->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/owl/jquery.min.js"> </script>
+    <script src="js/owl/owl.carousel.min.js"> </script>
+    <script src="js/owl/main.js"></script>
+
+    <!--Códigos tentativas
+    //let teste = document.getElementById('image');
+    //teste.style.background = 'blue';
+
+                <button class="item" type="button" id="Arcane" value="true">
+                <img class="box-filme" src="/netflix/img/arcane.jpg" alt="Banner Arcane" srcset="">
+            </button>
+    -->
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/style/main.css">
+    
+    <!-- owl css -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!-- Responsive CSS-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">Netflix</h2>
+            <nav>
+                <a href="https://www.netflix.com/br/" target="_blank">Site Oficial</a>
+                <a href="index.html">Séries</a>
+                <a href="animes.html">Animes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="filme-principal" id="image">
+            <div class="container">
+                <h3 class="titulo" id="titulo">Breaking Bad</h3>
+                <p class="descricao" id="descricao">Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos. </p>
+                
+                <div class="botoes">
+                    <button onclick="btnAssistir()" role="button" class="botao"> <i class="fas fa-play"></i>
+                    <!-- Usamos o role para que seja renderizado da melhor forma -->
+                        Assistir Agora
+                    </button>
+    
+                    <button onclick="btnInformacoes()" role="button" class="botao" id="informacoes"> <i class="fas fa-info-circle"></i>
+                        Informações
+                    </button>
+               </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Carrosel -->
+    <div class="carrosel-filmes">
+        <div class=" owl-carousel owl-theme">
+            
+            <button onclick="btnArcane()" class="item" type="button" id="Arcane" value="true">
+                <img class="box-filme" src="/img/arcane.jpg" alt="Banner Arcane" srcset="">
+            </button>
+
+            <button onclick="btnVikings()" class="item" type="button" id="Vikings">
+                <img class="box-filme" src="/img/vikings.jpg" alt="Banner Vikings" srcset="">
+            </button>
+            
+            <button onclick="btnLacasadepapel()" class="item" type="button" id="Lacasadepapel">
+                <img class="box-filme" src="/img/lacasadepapel.jpg" alt="Banner La Casa de Papel" srcset="">
+            </button>
+            
+            <button onclick="btnBreakingbad()" class="item" type="button" id="Breakingbad">
+                <img class="box-filme" src="/img/breakingbad.jpg" alt="Banner Breaking Bad" srcset="">
+            </button>
+
+            <button onclick="btnLoki()" class="item" type="button" id="Loki">
+                <img class="box-filme" src="/img/loki.jpg" alt="Banner Loki" srcset="">
+            </button>
+           
+            <button onclick="btnTWD()" class="item" type="button" id="btnTWD">
+                <img class="box-filme" src="/img/twd.jpg" alt="Banner The Walking Dead" srcset="">
+            </button>
+            
+            <button onclick="btnThewitcher()" class="item" type="button" id="TW" value="true">
+                <img class="box-filme" src="/img/thewitcher.jpg" alt="Banner The Witcher" srcset="">
+            </button>
+            
+            <button onclick="btnPB()" class="item" type="button" id="btnPB">
+                <img class="box-filme" src="/img/peaky.jpg" alt="Banner Peaky Blinders" srcset="">
+            </button>
+            
+
+        </div>
+    </div>
+
+    <!-- Links JS-->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/owl/jquery.min.js"> </script>
+    <script src="js/owl/owl.carousel.min.js"> </script>
+    <script src="js/owl/main.js"></script>
+
+    <!--Códigos tentativas
+    //let teste = document.getElementById('image');
+    //teste.style.background = 'blue';
+
+                <button class="item" type="button" id="Arcane" value="true">
+                <img class="box-filme" src="/netflix/img/arcane.jpg" alt="Banner Arcane" srcset="">
+            </button>
+    -->
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    /*Usamos o * para css reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: -apple-system, 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    /*valor padrão da flex que irá jogar os elementos para linha de cima do bloco*/
+    align-items: center;
+    justify-content: space-between;
+    /*joga os textos para do navbar para a esquerda, separando da logo. O justify-content sempre segue a direção da flex-direction*/
+    padding: 5px;
+}
+
+header .container .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: -apple-system, 'Arial Black';
+    font-size: 30px;
+}
+
+header nav a{
+    text-decoration: none;
+    /*Deixa a fonte sem traço*/
+    color: rgb(206, 204, 204);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+/* Filme Principal*/
+.filme-principal{
+    
+    max-width: 100%;
+    font-size: 16px;
+    /*background: linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/yXSzo0VU1Q1QaB7Xg5Hqe4tXXA3.jpg');
+    linear-gradient: Fazer um gradiente (red,green,blue,alpha) alpha define a opacidade*/
+    height: 500px;
+    /*define o tamanho da janela que contem a imagem do filme*/
+    display: flex;
+    /*Usamos o display flex para trabalhar melhor o posicionamento dos elementos*/
+    flex-direction: column;
+    /*Por padrão, o flex-direction vem com o valor Row, que joga os elementos para as linhas, porém queremos trabalhar com colunas*/
+    justify-content: center;
+    align-items: flex-start;
+    /*Elementos sempre vão começar da esquerda. O align é sempre o contrário do justify. Justify ta colum, align tá row*/
+}
+
+#image{
+    background: linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/yXSzo0VU1Q1QaB7Xg5Hqe4tXXA3.jpg');
+    /*linear-gradient: Fazer um gradiente (red,green,blue,alpha) alpha define a opacidade*/
+    background-size: cover;
+    /*cover faz com que a imagem completa se adeque ao tamanho do container*/
+}
+
+#image-anime{
+    background: linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/yvKrycViRMQcIgdnjsM5JGNWU4Q.jpg');
+    /*linear-gradient: Fazer um gradiente (red,green,blue,alpha) alpha define a opacidade*/
+    background-size: cover;
+    /*cover faz com que a imagem completa se adeque ao tamanho do container*/
+}
+
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    /*Definimos essa margem para que a descricao fique com uma certa distancia da margem de baixo. Essa distancia continua mesmo que a descrição do filme seja maior*/
+    margin-top: 10px;
+    /*Vai deixar um espaço maior entre o titulo e a descrição*/
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    /*fundo do botão fica branco*/
+    color: black;
+    /*fonte fica preta*/
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 30px;
+}
+/*Bloco contendo o Nome e a descrição do filme*/
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
