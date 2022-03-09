@@ -46,7 +46,7 @@ function btnLacasadepapel(){
 
 function btnBreakingbad(){
 
-    escolha = 'breakingbad';
+    escolha = 'Breaking Bad';
     document.querySelector('#image').style.backgroundImage = "linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.50)100%), url('/img/breakingbad2.jpg')"
 
     document.querySelector('#descricao').innerHTML = "Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos.";
@@ -116,7 +116,7 @@ function btnNaruto(){
 }
 function btnAot(){
 
-    escolha = 'aot';
+    escolha = 'Attack on Titan';
     document.querySelector('#image-anime').style.backgroundImage = "linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.50)100%), url('/img/aot2.jpg')"
 
     document.querySelector('#descricao').innerHTML = "Titãs estão quase exterminando a raça humana. Porém alguns estão dispostos a formar um exército de ataque aos seres assassinos. O jovem Eren, após ver sua mãe ser devorada por um titã, decide que não deixará nenhum deles vivo e buscará sua vingança completa.";

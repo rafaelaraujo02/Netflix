@@ -15,6 +15,19 @@ body{
     font-family: -apple-system, 'Helvetica Neue', sans-serif;
     color: white;
 }
+body::-webkit-scrollbar {
+    width: 12px;               /* Espessura da ScrollBar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: --preta;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(152, 152, 163);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid --preta;  /* creates padding around scroll thumb */
+  }
 
 header .container{
     display: flex;
