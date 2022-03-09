@@ -17,17 +17,16 @@ body{
 }
 body::-webkit-scrollbar {
     width: 12px;               /* Espessura da ScrollBar */
-  }
+}
   
-  body::-webkit-scrollbar-track {
-    background: --preta;        /* color of the tracking area */
-  }
+body::-webkit-scrollbar-track {
+    background: --preta;        /* cor da área */
+}
   
-  body::-webkit-scrollbar-thumb {
-    background-color: rgb(152, 152, 163);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid --preta;  /* creates padding around scroll thumb */
-  }
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(152, 152, 163);    /* cor da ScrollBar */
+    border-radius: 20px;       /* Arredondamento da borda da ScrollBar */
+}
 
 header .container{
     display: flex;
